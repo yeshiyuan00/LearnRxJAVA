@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 subscriber.onNext("Aloha");
                 subscriber.onCompleted();
             }
+
+
         });
 
         //3) Subscribe (订阅)
@@ -211,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 Drawable drawable = getResources().getDrawable(drawableRes);
                 subscriber.onNext(drawable);
                 subscriber.onCompleted();
+                Log.d(tag,"I just want to test this,will delete it later!");
             }
         }).observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
