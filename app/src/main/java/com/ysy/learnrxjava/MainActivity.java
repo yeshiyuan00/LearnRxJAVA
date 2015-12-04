@@ -246,5 +246,7 @@ public class MainActivity extends AppCompatActivity {
                 .map(mapOperator2) // IO 线程，由 observeOn() 指定
                 .observeOn(AndroidSchedulers.mainThread)
                 .subscribe(subscriber);  // Android 主线程，由 observeOn() 指定*/
+
+
     }
 }
